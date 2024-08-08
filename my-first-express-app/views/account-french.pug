@@ -1,0 +1,10 @@
+extends layout.pug
+
+block appContent
+    h1 Teddy Frye
+    h2 Vous avez : #{money}
+    if !recentTransaction
+        p Pas de transactions récentes
+    else
+        p Vous avez dépensé de l'argent...
+    button Verrouiller

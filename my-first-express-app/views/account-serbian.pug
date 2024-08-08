@@ -1,0 +1,10 @@
+extends layout.pug
+
+block appContent
+    h1 Teddy Frye
+    h2 Imate: #{money}
+    if !recentTransaction
+        p Nema nedavnih transakcija
+    else
+        p Trošili ste novac...
+    button Zaključaj
